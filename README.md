@@ -26,3 +26,12 @@ CAPTURAS DE PRUEBAS
 
 
 # PUNTO 2 (CALCULADORA BASADA EN AGENTES)
+Para la implementación, importé las clases necesarias del paquete *mesa*, una biblioteca de Python que facilita la creación de modelos de simulación. En particular, importé *Agent* para crear los agentes y *Model* para construir el modelo general. También añadí *BaseScheduler* de *mesa.time* para gestionar la programación de los agentes.
+
+Luego, creé una clase llamada *CalculadoraAgent*, que hereda de *Agent*. Esta clase representa un agente que puede llevar a cabo distintas operaciones matemáticas. Dentro del constructor *\_\_init\_\_*, inicialicé el agente con un identificador único (*id_unico*), el modelo al que pertenece (*modelo*), y el tipo de operación que puede realizar (*tipo_operacion*). Posteriormente, implementé el método *realizar_operacion*, que toma dos números (*x* e *y*) y ejecuta la operación correspondiente de acuerdo con el *tipo_operacion* del agente, incluyendo operaciones de suma, resta, multiplicación, división y potencia.
+
+Después, definí la clase *ModeloCalculadora*, que hereda de *Model*. Esta clase representa el modelo completo que contiene todos los agentes. En el constructor de este modelo, inicialicé el programador (*scheduler*) y creé instancias de *CalculadoraAgent* para cada operación matemática. A continuación, implementé el método *ejecutar_calculo*, que recibe un operador y dos números, y luego llama al agente correspondiente para realizar la operación.
+
+Finalmente, creé una función llamada *iniciar_calculadora*, que permite a los usuarios interactuar con la calculadora. Esta función solicita al usuario que ingrese una operación, y si el usuario escribe "salir", el programa finaliza.
+
+CAPTURA DE COMO FUNCIONA DESDE REPLIT(SIRVE EN TODO)
