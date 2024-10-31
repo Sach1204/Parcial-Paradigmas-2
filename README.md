@@ -35,3 +35,22 @@ Después, definí la clase *ModeloCalculadora*, que hereda de *Model*. Esta clas
 Finalmente, creé una función llamada *iniciar_calculadora*, que permite a los usuarios interactuar con la calculadora. Esta función solicita al usuario que ingrese una operación, y si el usuario escribe "salir", el programa finaliza.
 
 CAPTURA DE COMO FUNCIONA DESDE REPLIT(SIRVE EN TODO)
+
+![image](https://github.com/user-attachments/assets/a60fddde-fd93-4352-ab46-89402fcdb7db)
+
+# PUNTO 3 (CALCULADORA CIENTIFICA EN KOTLIN)
+
+
+Implementé una calculadora en Kotlin utilizando la librería `kotlin.math` para realizar operaciones matemáticas básicas y científicas, organizada en una estructura de clases. Definí una clase base `Calculadora`, que contiene métodos para las operaciones básicas de suma, resta, multiplicación y división. Cada método es marcado como `open`, permitiendo que otras clases los sobrescriban.
+
+Luego, extendí la funcionalidad en la clase `CalculadoraCientifica`, que hereda de `Calculadora`. Esta clase incluye métodos para operaciones científicas como el cálculo de seno, coseno, tangente, potencia, raíz, logaritmos (natural y base 10), y la conversión entre grados y radianes. Así, esta clase abarca tanto operaciones avanzadas como funciones de conversión angular.
+
+Además, agregué una clase `Evaluador` que permite evaluar expresiones matemáticas. Esta clase interpreta cadenas de texto, maneja operadores aritméticos y funciones científicas. Esto añade una capa de flexibilidad, ya que permite realizar cálculos complejos mediante la entrada de expresiones.
+
+Por último, desarrollé una clase `CalculadoraConMemoria`, que extiende `CalculadoraCientifica` e incluye funciones de memoria para almacenar, recuperar y borrar valores. Esta clase también integra el evaluador de expresiones, permitiendo al usuario ingresar expresiones complejas y almacenar los resultados en memoria. La función `main` permite interactuar con la calculadora mediante un menú en consola, brindando acceso a todas las operaciones y funcionalidades de memoria, y gestionando las interacciones mediante opciones seleccionables por el usuario.
+
+Al aplicar los principios de Programación Orientada a Objetos, el código es modular, extensible y fácil de mantener. La herencia permite construir clases más complejas a partir de clases base, el polimorfismo permite sobrescribir y ampliar funciones según sea necesario, y el encapsulamiento de la memoria protege el valor almacenado y permite un manejo controlado de los datos.
+
+CAPTURA DE PRUEBA()
+![image](https://github.com/user-attachments/assets/3e207ce2-2382-4dc6-b372-6b2f2c2a5a98)
+
